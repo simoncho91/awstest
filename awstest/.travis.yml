@@ -10,9 +10,9 @@ branches:
 cache:
   directories:
     - 'C:/Users/jwkim/.m2/repository'
-    - 'C:/Users/jwkim/.gradle'
+    - 'C:/Users/jwkim/.maven'
 
-script: "./gradlew clean build"
+script: "./maven clean build"
 
 # CI 실행 완료시 메일로 알람
 notifications:
