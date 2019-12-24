@@ -12,7 +12,7 @@ cache:
     - 'C:/Users/jwkim/.m2/repository'
     - 'C:/Users/jwkim/.maven'
 
-script: "./maven clean build"
+script: "mvn cobertura:cobertura"
 
 # CI 실행 완료시 메일로 알람
 notifications:
