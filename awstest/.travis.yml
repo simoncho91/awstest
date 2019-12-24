@@ -3,7 +3,7 @@ jdk:
   - openjdk8
 
 before_install:
-  - gem install bundler
+  - gem install bundler --pre
 
 branches:
   only:
