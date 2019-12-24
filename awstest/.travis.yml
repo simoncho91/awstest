@@ -1,8 +1,21 @@
 language: java
-jdk: oraclejdk8
+jdk:
+  - openjdk8
 
 before_install:
-  - chmod +x mvnw
+  - gem install bundler
+
+branches:
+  only:
+    - master
+
+# Travis CI 서버의 Home
+cache:
+  directories:
+    - 'C:/Users/jwkim/.m2/repository'
+    - 'C:/Users/jwkim/.maven'
+
+script: "./maven clean build"
 
 # CI 실행 완료시 메일로 알람
 notifications:
