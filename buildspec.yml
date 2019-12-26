@@ -1,11 +1,17 @@
 version: 0.1
-
+environment_variables:
+  plaintext:
+     phase: "alpha"
 phases:
-  post_build:
+  pre_build:
     commands:
-      - echo Build completed on `date`
-      - mvn package
+     - mvn clean
+    
+build:
+  commands:
+    - mvn package
+
 artifacts:
   files:
-    - target/myApp.war
+    - target/awstest.war
   discard-paths: yes
