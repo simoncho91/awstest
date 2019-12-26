@@ -1,0 +1,5 @@
+version: 0.0
+os: windows
+files:
+  - source: ./awstest-1.0.war
+    destination: /tmp
