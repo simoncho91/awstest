@@ -15,5 +15,7 @@ build:
     
 artifacts:
   files:
-    - target/awstest.war
+    - '**/*'
+  name: $Env:TEST_ENV_VARIABLE-$(Get-Date -UFormat "%Y%m%d-%H%M%S")
+  
   discard-paths: yes
