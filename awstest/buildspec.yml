@@ -12,7 +12,6 @@ phases:
 build:
   commands:
     - mvn package
-
     
 artifacts:
   files:
