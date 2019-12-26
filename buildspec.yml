@@ -1,17 +1,20 @@
-version: 0.1
-environment_variables:
-  plaintext:
-     phase: "alpha"
-phases:
-  pre_build:
-    commands:
-     - mvn clean
-    
-build:
-  commands:
-    - mvn package
+version: 0.2
 
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn test 
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
 artifacts:
   files:
     - target/awstest.war
+    - appspec.yml
+
   discard-paths: yes
