@@ -16,3 +16,6 @@ artifacts:
   files:
     - target/awstest.war
     - appspec.yml
+
+  discard-paths: yes
+
