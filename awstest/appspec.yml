@@ -1,5 +1,5 @@
 version: 0.0
-os: windows
+os: linux
 files:
-  - source: ./awstest-1.0.war
-    destination: /tmp
+  - source: /
+    destination: /home/ec2-user/build/
